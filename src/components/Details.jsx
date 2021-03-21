@@ -1,4 +1,4 @@
-// Analysis component: contains video and graph
+// Details page
 import React from 'react';
 import {View, Text, StyleSheet } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   container: {}
   })
 
-const Analysis = () =>{
+const Details = () =>{
 
     return(
         <View style={styles.container}>
@@ -17,4 +17,4 @@ const Analysis = () =>{
     )
 }
 
-export default Analysis;
+export default Details;
