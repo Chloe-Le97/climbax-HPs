@@ -30,7 +30,7 @@ const Details = () => {
     <View>
       <Header page="Analysis" />
       <View style={styles.mainContainer}>
-        <Text>{id}</Text>
+        <Text>Type: {id}</Text>
         <Video data={data}></Video>
         <Graph data={data.summary}></Graph>
       </View>
