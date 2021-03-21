@@ -1,0 +1,25 @@
+{
+  "video_start": 232.9944894190159,
+  "highest_point": 13.881240160250137,
+  "start_time": "2021-02-25T13:45:58.039999962+00:00",
+  "end_time": "2021-02-25T13:49:58.839999914+00:00",
+  "summary": {
+    "height_gain_total": 13.881240160250137,
+    "topouts_count": 0,
+    "climb_time_total": 240.79999995231628,
+    "left_moves_count": 26,
+    "right_moves_count": 31,
+    "moves_count": 57,
+    "left_time_on_hold": 180.24000000953674,
+    "right_time_on_hold": 204.84000039100647,
+    "time_on_hold": 68.699999569,
+    "left_time_moving": 31.299999954,
+    "right_time_moving": 37.39999961499999,
+    "time_moving": 192.5400002002716,
+    "left_bias": 1.3117904013122277,
+    "right_bias": -0.3117904013122277,
+    "climbs_count": 1,
+    "intensity": 1.0000000039548018,
+    "climb_type": "SPORT"
+  }
+}

@@ -17,9 +17,7 @@ const styles = StyleSheet.create({
 const App = () => {
   return (
     <NativeRouter>
-      <View style={styles.container}>
-        
-
+      <View style={styles.container}>   
         <Switch>
           <Route path="/" exact>
             <Feed/>
@@ -30,10 +28,8 @@ const App = () => {
         </Switch>
 
         <Footer/>
-
       </View>
     </NativeRouter>
-
   );
 };
 
