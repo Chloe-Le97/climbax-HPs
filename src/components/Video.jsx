@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   container: {}
   })
 
-const Analysis = () =>{
+const Video = () =>{
 
     return(
         <View style={styles.container}>
@@ -17,4 +17,4 @@ const Analysis = () =>{
     )
 }
 
-export default Analysis;
+export default Video;
