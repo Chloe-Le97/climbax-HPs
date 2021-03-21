@@ -1,9 +1,10 @@
 import React from 'react';
 import Constants from 'expo-constants';
-import { Text, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { NativeRouter } from 'react-router-native';
-import Header from './src/components/Header';
 import Footer from './src/components/Footer';
+import Details from './src/components/Details';
+import Feed from './src/components/Feed'
 
 const styles = StyleSheet.create({
   container: {
@@ -17,8 +18,19 @@ const App = () => {
   return (
     <NativeRouter>
       <View style={styles.container}>
-        <Header/>
+        
+
+        <Switch>
+          <Route path="/" exact>
+            <Feed/>
+          </Route>
+          <Route path="/:id" exact>
+            <Details/>
+          </Route>
+      </Switch>
+
         <Footer/>
+
       </View>
     </NativeRouter>
 
