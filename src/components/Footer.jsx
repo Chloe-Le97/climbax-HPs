@@ -13,9 +13,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         height: '40',
         width: '100%',
-        padding: 15,
         borderTopWidth: 1,
         borderColor: '#E5E5E5'
+    },
+    icon:{
+        padding: 15,
     }
   })
 
@@ -23,11 +25,11 @@ const Footer = () =>{
 
     return(
         <View style={styles.footerDiv}>
-            <FontAwesomeIcon icon={ faStickyNote }/>
-            <FontAwesomeIcon icon={ faTrophy } color={"#949494"}/>
-            <FontAwesomeIcon icon={ faPlus } color={"#949494"}/>
-            <FontAwesomeIcon icon={ faTachometerAlt } color={"#949494"}/>
-            <FontAwesomeIcon icon={ faUser } color={"#949494"}/>
+            <FontAwesomeIcon icon={ faStickyNote } style={{padding: 15, borderTop: '2px solid rgb(0,0,0)'}}/>
+            <FontAwesomeIcon icon={ faTrophy } color={"#949494"} style={styles.icon}/>
+            <FontAwesomeIcon icon={ faPlus } color={"#949494"} style={styles.icon}/>
+            <FontAwesomeIcon icon={ faTachometerAlt } color={"#949494"} style={styles.icon}/>
+            <FontAwesomeIcon icon={ faUser } color={"#949494"} style={styles.icon}/>
         </View>
     )
 }
