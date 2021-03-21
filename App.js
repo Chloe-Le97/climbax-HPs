@@ -1,7 +1,7 @@
 import React from 'react';
 import Constants from 'expo-constants';
 import { StyleSheet, View } from 'react-native';
-import { NativeRouter } from 'react-router-native';
+import { NativeRouter, Switch, Route } from 'react-router-native';
 import Footer from './src/components/Footer';
 import Details from './src/components/Details';
 import Feed from './src/components/Feed'
@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/:id" exact>
             <Details/>
           </Route>
-      </Switch>
+        </Switch>
 
         <Footer/>
 

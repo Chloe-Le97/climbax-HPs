@@ -1,7 +1,8 @@
 import React from 'react';
 import {View, Text, StyleSheet } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-native';
 
 const styles = StyleSheet.create({
     headerDiv:{
@@ -24,12 +25,12 @@ const styles = StyleSheet.create({
     }
   })
 
-const Header = () =>{
+const Header = (props) =>{
 
     return(
         <View style={styles.headerDiv}>
-            <FontAwesomeIcon icon={ faArrowLeft } />
-            <Text style={styles.arrow}>Analysis</Text>
+            <Link to="/"><FontAwesomeIcon icon={ faArrowLeft } /></Link>
+            <Text style={styles.arrow}>{props.page}</Text>
         </View>
     )
 }
