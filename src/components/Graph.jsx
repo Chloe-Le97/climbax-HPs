@@ -1,4 +1,4 @@
-// Analysis component: contains video 
+// Graph component
 import React from 'react';
 import {View, Text, StyleSheet } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
   container: {}
   })
 
-const Video = (props) =>{
+const Graph = (props) =>{
+    const data = props.data;
 
     return(
         <View style={styles.container}>
@@ -18,4 +19,4 @@ const Video = (props) =>{
     )
 }
 
-export default Video;
+export default Graph;

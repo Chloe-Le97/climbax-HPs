@@ -2,8 +2,8 @@ import axios from 'axios';
 
 export const apiReq =  (endpoint) => {
   try {
-    let req = axios.get(`https://healthypal-api.herokuapp.com/get/${enpoint}`);
-    req.then((res) => {
+    return axios.get(`https://healthypal-api.herokuapp.com/get/${endpoint}`).then((res) => {
+      console.log(res)
       return res
     })
   } catch (e) {

@@ -29,7 +29,7 @@ const Header = (props) =>{
 
     return(
         <View style={styles.headerDiv}>
-            <Link to="/"><FontAwesomeIcon icon={ faArrowLeft } /></Link>
+            {props.page !== 'Feed'  &&<Link to="/"><FontAwesomeIcon icon={ faArrowLeft } /></Link>}
             <Text style={styles.arrow}>{props.page}</Text>
         </View>
     )
